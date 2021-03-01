@@ -1,0 +1,63 @@
+<form (ngSubmit)="registrar()" ngNativeValidate>
+  <div class="card" style="width: 100%">
+    <div class="card-body">
+      <h5 class="card-title">Registro de Autos</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Diligencie campos:</h6>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Marca </span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="marca"
+          aria-label="marca"
+          name="marca"
+          aria-describedby="basic-addon1"
+          [(ngModel)]='nuevoAuto.marca'
+          required
+        />
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Modelo</span>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="modelo"
+          name="modelo"
+          aria-label="modelo"
+          aria-describedby="basic-addon1"
+          [(ngModel)]='nuevoAuto.modelo'
+          required
+        />
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Color</span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="color"
+          aria-label="color"
+          name="color"
+          aria-describedby="basic-addon1"
+          [(ngModel)]='nuevoAuto.color'
+          required
+        />
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Precio</span>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="precio"
+          name="precio"
+          aria-label="precio"
+          aria-describedby="basic-addon1"
+          [(ngModel)]='nuevoAuto.precio'
+          required
+        />
+      </div>
+
+      <button type="submit" class="btn btn-success right">Guardar</button>
+    </div>
+  </div>
+</form>
