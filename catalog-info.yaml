@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: crud-mean
+  name: crud-mean-tg
   description: Aplicación Fullstack (MEAN Stack) para operaciones CRUD básicas.
   # Etiquetas para facilitar la búsqueda en el catálogo
   tags:
